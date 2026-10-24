@@ -8,7 +8,7 @@
 <meta name="description" content="Khảo sát ngắn về điều mọi người cần ở một ứng dụng sức khỏe: theo dõi vận động, giấc ngủ, AI và quyền riêng tư.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="vi_VN">
-<meta property="og:title" content="Khảo sát ứng dụng sức khỏe">
+<meta property="og:title" content="Pulse – Bạn muốn một ứng dụng sức khỏe như thế nào?">
 <meta property="og:description" content="Khoảng 3–5 phút, không cần đăng nhập. Chia sẻ điều bạn thực sự cần ở một ứng dụng sức khỏe.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2314683f'/%3E%3Cpath d='M6 17h5l2-6 4 12 2.5-6H26' fill='none' stroke='white' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -552,7 +552,7 @@ function showCard(){
  x.onclick=close;
  q.onclick=()=>{close();window.close();setTimeout(()=>{app.replaceChildren();app.append($("h1",0,"Hẹn gặp lại bạn!"),$("p","lead","Bạn đã thoát khảo sát. Bạn có thể đóng tab này."))},480)};
  row.append(x,q);
- g.append(ic,$("h2","gt","Cảm ơn bạn rất nhiều!"),$("p","gl","Mỗi câu trả lời đều giúp chúng mik gần với điều mọi người thực sự cần hơn."),$("p","gl","Mình sẽ đọc kỹ và luôn tôn trọng quyền riêng tư của bạn."),$("p","gs","Đăng · Pulse"),row);
+ g.append(ic,$("h2","gt","Cảm ơn bạn rất nhiều!"),$("p","gl","Mỗi câu trả lời đều giúp Pulse gần với điều mọi người thực sự cần hơn."),$("p","gl","Mình sẽ đọc kỹ và luôn tôn trọng quyền riêng tư của bạn."),$("p","gs","Đăng · Pulse"),row);
  ov.append(g);document.addEventListener("keydown",esc);document.body.append(ov);setTimeout(()=>x.focus(),350);
 }
 function confetti(){if(matchMedia("(prefers-reduced-motion:reduce)").matches)return;const c=["#14683f","#4cc58a","#bfe9d0","#e6f7c9","#2f9e6a"],frag=document.createDocumentFragment();for(let n=0;n<36;n++){const e=$("span","conf");e.style.left=Math.random()*100+"vw";e.style.background=c[n%5];e.style.setProperty("--x",(Math.random()*160-80)+"px");e.style.setProperty("--r",(Math.random()*720-360)+"deg");e.style.animationDelay=Math.random()*.6+"s";e.style.animationDuration=2.2+Math.random()*1.6+"s";frag.append(e);setTimeout(()=>e.remove(),4500)}document.body.append(frag)}
